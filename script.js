@@ -23,7 +23,9 @@
       return ws.close();
     });
     return $('#console-form').on('submit', function() {
-      ws.send($('#console').val());
+      if (ws !== void 0) {
+        ws.send($('#console').val());
+      }
       return false;
     });
   });

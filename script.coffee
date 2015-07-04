@@ -21,7 +21,7 @@ $ ->
     ws.close()
 
   $('#console-form').on 'submit', ->
-    ws.send $('#console').val()
+    ws.send $('#console').val() if ws != undefined
 
     false
 
