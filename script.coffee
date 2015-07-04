@@ -13,7 +13,7 @@ $ ->
       $('#ws-status').html '<span class="red">Not connected</span>'
 
     ws.onmessage = (message) ->
-      $('#log').html '<span class="green bold">' + timestamp() + '</span> ' + message.data + '<br/>' + $('#log').html()
+      $('#log').prepend '<span class="green bold">' + timestamp() + '</span> ' + message.data + '<br/>'
 
     false
 

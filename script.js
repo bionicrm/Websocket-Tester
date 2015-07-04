@@ -15,7 +15,7 @@
         return $('#ws-status').html('<span class="red">Not connected</span>');
       };
       ws.onmessage = function(message) {
-        return $('#log').html('<span class="green bold">' + timestamp() + '</span> ' + message.data + '<br/>' + $('#log').html());
+        return $('#log').prepend('<span class="green bold">' + timestamp() + '</span> ' + message.data + '<br/>');
       };
       return false;
     });
