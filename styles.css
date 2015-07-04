@@ -1,0 +1,19 @@
+body {
+  font-family: monospace; }
+
+.green {
+  color: green; }
+
+.red {
+  color: red; }
+
+.bold {
+  font-weight: bold; }
+
+form {
+  display: inline-block; }
+
+input, button {
+  margin: 0 5px; }
+
+/*# sourceMappingURL=styles.css.map */
