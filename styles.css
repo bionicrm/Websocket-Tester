@@ -1,6 +1,17 @@
 body {
   font-family: monospace; }
 
+#ws-status span {
+  padding: 3px; }
+
+.bg-green {
+  background-color: green;
+  color: #FFF; }
+
+.bg-red {
+  background-color: red;
+  color: #FFF; }
+
 .green {
   color: green; }
 

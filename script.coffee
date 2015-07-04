@@ -7,10 +7,10 @@ $ ->
     $('#log').html ''
 
     ws.onopen = ->
-      $('#ws-status').html '<span class="green">Connected</span>'
+      $('#ws-status').html '<span class="bg-green">Connected</span>'
 
     ws.onclose = ->
-      $('#ws-status').html '<span class="red">Not connected</span>'
+      $('#ws-status').html '<span class="bg-red">Not connected</span>'
 
     ws.onmessage = (message) ->
       $('#log').prepend '<span class="green bold">' + timestamp() + '</span> ' + message.data + '<br/>'

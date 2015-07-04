@@ -9,10 +9,10 @@
       ws = new WebSocket($('#server').val());
       $('#log').html('');
       ws.onopen = function() {
-        return $('#ws-status').html('<span class="green">Connected</span>');
+        return $('#ws-status').html('<span class="bg-green">Connected</span>');
       };
       ws.onclose = function() {
-        return $('#ws-status').html('<span class="red">Not connected</span>');
+        return $('#ws-status').html('<span class="bg-red">Not connected</span>');
       };
       ws.onmessage = function(message) {
         return $('#log').prepend('<span class="green bold">' + timestamp() + '</span> ' + message.data + '<br/>');
