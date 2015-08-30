@@ -1,1 +1,61 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><link rel="stylesheet" href="styles.css"><title>Websocket Tester</title></head><body><h3>Server</h3><form id="server-form"><input id="server"><input type="submit" value="Connect"></form><button id="disconnect">Disconnect</button><br><br><div id="ws-status"></div><h3>Console</h3><form id="console-form"><input id="console"><input type="submit" value="Send"></form><h3>Log</h3><div id="log"></div><script src="//code.jquery.com/jquery-2.1.4.min.js"></script><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="css/app.css"/>
+
+        <title>Websocket-Tester</title>
+    </head>
+
+    <body>
+        <header class="flex">
+            <h1>Websocket-Tester</h1>
+
+            <a href="https://github.com/bionicrm/Websocket-Tester" title="See me on GitHub!">
+                <img src="images/github-64.png" alt="GitHub"/>
+            </a>
+        </header>
+
+        <hr/>
+
+        <main>
+            <section>
+                <h3>Server <span id="ws-status"></span></h3>
+
+                <div class="flex">
+                    <form id="server-form" class="flex">
+                        <input id="server"/>
+                        <input type="submit" value="Connect"/>
+                    </form>
+
+                    <button id="disconnect">Disconnect</button>
+                </div>
+            </section>
+
+            <section>
+                <h3>Console</h3>
+
+                <form id="console-form" class="flex">
+                    <input id="console"/>
+                    <input type="submit" value="Send"/>
+                </form>
+            </section>
+
+            <section>
+                <div class="flex">
+                    <h3>Log</h3>
+
+                    <button id="clear">Clear</button>
+                </div>
+
+                <div id="log"></div>
+            </section>
+        </main>
+
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
